@@ -4,23 +4,23 @@ Personal financial assistant based on Django framework
 
 Used postgreSQL for storing financial data in DB
 
-budget_review - app for adding financial data and monitoring the budget:
+**budget_review** - app for adding financial data and monitoring the budget:
 
-  view_budget - start end balance for perid, all the operation within it, classified by transaction classes
+    view_budget - start end balance for perid, all the operation within it, classified by transaction classes
   
-  add_record - adding new transactions
+    add_record - adding new transactions
   
-  new_transaction_class - adding new transaction class to classifier
+    new_transaction_class - adding new transaction class to classifier
   
-  view_chart - monitoring financial data using charts: expenses, incomes, balance
+    view_chart - monitoring financial data using charts: expenses, incomes, balance
 
-login - user accounts management
+**login** - user accounts management
   
-  login_user - log users into app
+    login_user - log users into app
   
-  logout_user - log them out
+    logout_user - log them out
   
-  register - register new user in the app
+    register - register new user in the app
   
   
   
