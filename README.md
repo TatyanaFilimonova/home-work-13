@@ -25,6 +25,6 @@ Used postgreSQL for storing financial data in DB
   
 To fill up the test data base:
 
-    run shell command **python manage.py createsuperuser**
+    run shell command python manage.py createsuperuser
 
-    run SQL script **Script-5.sql**
+    run SQL script Script-5.sql
