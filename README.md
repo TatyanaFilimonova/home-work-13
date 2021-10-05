@@ -23,5 +23,9 @@ Used postgreSQL for storing financial data in DB
     register - register new user in the app
   
   
-  
+To fill up the test data base:
 
+1. run shell **command python manage.py createsuperuser**
+
+
+2. run SQL script **Script-5.sql**
