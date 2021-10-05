@@ -6,7 +6,8 @@ Used postgreSQL for storing financial data in DB
 
 **budget_review** - app for adding financial data and monitoring the budget:
 
-    view_budget - start/end balance for perid, debit/credit turnovers, all the operation within the period, classified by transaction classes
+    view_budget - start/end balance for user choosed period, debit/credit turnovers, 
+    all the operation within the period, classified by transaction classes
   
     add_record - adding new transaction
   
