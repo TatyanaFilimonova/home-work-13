@@ -1,3 +1,5 @@
+import os
+
 from django.shortcuts import render, get_object_or_404, redirect
 from django.http import HttpResponseRedirect
 from datetime import date, timedelta, datetime
@@ -36,7 +38,7 @@ def view_budget(request, date_start=None, date_finish=None):
     )
 
     grossbook = GrossBook.objects.filter(
-        transaction_date__range=[date_start, date_finish],
+        transaction_date__range=sorted([date_start, date_finish], key = lambda x: datetime.strptime(x,'%Y-%m-%d')),
         user=request.user
         ).only(
             'transaction_date',
