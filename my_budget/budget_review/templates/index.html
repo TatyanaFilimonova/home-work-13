@@ -14,7 +14,7 @@ Budget for user  {{  request.user }}, period {{date_start}} : {{date_finish}}
 <form action = "{% url 'view_budget' %}" method = 'post' name ='select dates' >
     {% csrf_token %}
     <input type = date name="date_start" min="2021-07-01" value = {{date_start}}>&nbsp
-    <input type = date name="date_finish" min="2021-09-01" value = {{date_finish}}>&nbsp
+    <input type = date name="date_finish" min="2021-07-02" value = {{date_finish}}>&nbsp
     <input type = submit value="Select report period" >
 </form>
 <p></p>
@@ -93,7 +93,7 @@ Budget for user  {{  request.user }}, period {{date_start}} : {{date_finish}}
         {% load static %}
         <div class="ext-box">
             <div class="int-box">
-                <img src="{% static 'diagram.gif' %}" alt = "Diagram" width="30" height="30" align="right">
+                <img src="{% static 'budget_review/diagram.gif' %}" alt = "Diagram" width="30" height="30" align="right">
             </div>
             <div class="int-box">
                 <a href = "/budget_review/view_chart/{{date_start}}/{{date_finish}}"><b>View base charts for budget period</b></a>
